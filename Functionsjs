@@ -1,0 +1,25 @@
+
+
+const generateRandomNumber = (num) => {
+    return Math.floor(Math .random() * num)
+}
+
+const generateGreeting = '' => {
+    let starWarsGreeting = ['May the force be with you', 'Greetings', 'Hello', 'Midichlorians guide you', 'Farewell', 'Goodbye'];
+        for (let i = 0; i <= starWarsGreeting.length; i ++) {
+            return Math.floor(Math.random() * starWarsGreeting.length
+        }
+}
+
+
+const generateName = '' => {
+    let starWarsName = ['ObiWan', 'Anakin', 'Plo-Koon', 'Count Dooku', 'Mace Windu', 'Master Yoda', 'Darth Sidious', 'General Grevious', 'Darth Maul', 'Kit Fisto'];
+        for (let i = 0; i <= starWarsName.length; i ++) {
+            return Math.floor(Math.random() * starWarsName.length
+    }
+}
+const starWarsEnding = [];
+
+const randomMessageGenerator = (starWarsGreeting, starWarsName, starWarsEnding) => {
+    for (let i = 0; i <= )
+}
