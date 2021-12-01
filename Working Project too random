@@ -1,0 +1,37 @@
+let nameChar = ['ObiWan', 'Anakin', 'Plo-Koon', 'Count Dooku', 'Mace Windu', 'Master Yoda', 'Darth Sidious', 'General Grevious', 'Darth Maul', 'Kit Fisto', 'Rey', 'Kylo Ren']
+let movie = ['A New Hope', 'The Empire Strikes Back', 'Return of the Jedi', 'The Phantom Menace', 'Attack of the Clones', 'Revenge of the Sith']
+let lightsaberColor = ['Red', 'Green', 'Blue', 'White', 'Burgundy', 'Yellow']
+let message = ['"May the force be with you"', '"Greetings"', '"Midichlorians guide you"', '"Farwell"', '"Goodbye"']
+
+//Creating Character Object
+let characters = {nameChar: nameChar, movie: movie, lightsaberColor: lightsaberColor, message: message}
+ 
+//Selecting a Random Character. 
+const randChar = () => {
+    const randNum = Math.floor(Math.random()*nameChar.length)
+    for (prop in characters){
+        switch(prop){
+            case 'nameChar':
+                let namePhrase = `Your jedi/sith is: ${characters.nameChar[randNum]}!`
+                console.log(namePhrase)
+                break;
+            case 'movie':
+                let moviePhrase =  `Your jedi/sith is from the movie: ${characters.movie[randNum]}`
+                console.log(moviePhrase)
+                break;
+            case 'lightsaberColor': 
+                let saberPhrase =  `Your jedi/siths's light saber color is: ${characters.lightsaberColor[randNum]}`
+                console.log(saberPhrase)
+                break;
+            case 'message': 
+                let mesPhrase = `Your jedi/sith's message is: ${characters.message[randNum]}`
+                console.log(mesPhrase)
+                break;
+            default:
+                console.log('No character found!')
+                
+        }
+    }
+}
+
+randChar()
